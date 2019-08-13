@@ -5,9 +5,9 @@ package apache.common.lang.bean;
  * PS: Not easy to write code, please indicate.
  */
 public class Bean {
-    String name;
-    Integer age;
-    String phone;
+    private String name;
+    private Integer age;
+    private String phone;
 
     public String getName() {
         return name;
@@ -29,6 +29,10 @@ public class Bean {
         return phone;
     }
 
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
     @Override
     public String toString() {
         return "Bean{" +
@@ -36,9 +40,5 @@ public class Bean {
                 ", age=" + age +
                 ", phone='" + phone + '\'' +
                 '}';
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
     }
 }
