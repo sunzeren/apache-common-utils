@@ -3,7 +3,7 @@
 apache-common常用工具类汇总
 本项目仅提供常用工具，有待补充..
 
-### 以下为apache-common常用包汇总
+### 以下为apache-common常用包简介
 
 组件|功能介绍
 --|:--:
