@@ -1,12 +1,8 @@
 package apache.common.lang;
 
-import org.apache.commons.io.FileUtils;
 import org.junit.Test;
 
-import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 /**
  * Author by Sun, Date on 2019/8/11.

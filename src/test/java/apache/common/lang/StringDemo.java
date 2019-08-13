@@ -1,10 +1,7 @@
 package apache.common.lang;
 
-import org.apache.commons.compress.utils.Lists;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
-
-import java.util.Arrays;
 
 /**
  * Author by Sun, Date on 2019/8/11.
@@ -69,7 +66,7 @@ public class StringDemo {
         StringUtils.uncapitalize(str);
 
         // 将字符串数组转变为一个字符串,通过","拼接,支持传入iterator和collection
-        StringUtils.join(new String[]{"1", "2","3","4"}, ",");
+        StringUtils.join(new String[]{"1", "2", "3", "4"}, ",");
 
         String join = String.join("1", "2");
 

@@ -40,7 +40,7 @@ public class MathsDemo {
 
         // 将字符串转换为int类型,支持float,long,short等数值类型
         //小数会转换为0
-        NumberUtils.toInt(str,10);
+        NumberUtils.toInt(str, 10);
 
         // 通过字符串创建BigDecimal类型 ,支持int,float,long等数值
         NumberUtils.createBigDecimal(str);

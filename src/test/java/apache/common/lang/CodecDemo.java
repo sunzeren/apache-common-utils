@@ -3,7 +3,6 @@ package apache.common.lang;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.codec.net.URLCodec;
-import org.apache.commons.lang3.time.DateUtils;
 import org.junit.Test;
 
 import java.nio.charset.Charset;

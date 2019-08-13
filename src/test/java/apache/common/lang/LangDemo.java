@@ -76,7 +76,7 @@ public class LangDemo {
      */
     @Test
     public void arrayUtils() {
-        String[] arrays = new String[]{"1","2","3"};
+        String[] arrays = new String[]{"1", "2", "3"};
         System.out.println(ArrayUtils.indexOf(arrays, "2"));
         ArrayUtils.remove(arrays, 2);
     }
