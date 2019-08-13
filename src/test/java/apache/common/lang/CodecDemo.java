@@ -3,6 +3,7 @@ package apache.common.lang;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.codec.net.URLCodec;
+import org.apache.commons.lang3.time.DateUtils;
 import org.junit.Test;
 
 import java.nio.charset.Charset;
@@ -38,15 +39,33 @@ public class CodecDemo {
     @Test
     public void MD5() {
         System.out.println("==============MD5================");
-        String result = DigestUtils.md5Hex("ng");
-        System.out.println(result);
+        String data = "Hello Sun !";
+        String result1 = DigestUtils.md5Hex(data);
+        String result2 = DigestUtils.md5Hex(data);
+        System.out.println("result1 = " + result1);
+        System.out.println("result2 = " + result2);
+        System.out.println("result1.equals(result2) = " + result1.equals(result2));
+    }
+
+    /**
+     * sha1加密,
+     */
+    @Test
+    public void SHA1() {
+        System.out.println("==============SHA1================");
+        String data = "Hello Sun !";
+        String result1 = DigestUtils.sha1Hex(data);
+        String result2 = DigestUtils.sha1Hex(data);
+        System.out.println("result1 = " + result1);
+        System.out.println("result2 = " + result2);
+        System.out.println("result1.equals(result2) = " + result1.equals(result2));
     }
 
     /**
      * URL编码
      */
     @Test
-    public void urlCodec() throws Exception {
+    public void urlEncoder() throws Exception {
         System.out.println("==============URLCodec================");
         //第一个参数可为null,可设置对URL安全字符
         String url = "www.baidu.com?seachKey=helloWorld";
